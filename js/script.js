@@ -7,6 +7,11 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: $('#' + scrollkey).offset().top - 75
         }, 4000);
+        console.log(scrollkey);
+        if(scrollkey == 'contact')
+            $('#cid').addClass("menu-active");
+        else
+            $('#aid').addClass("menu-active");
         localStorage.clear();
     }
 
